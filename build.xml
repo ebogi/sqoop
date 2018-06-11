@@ -246,6 +246,9 @@
   <property name="sqoop.test.netezza.db.name" value="SQOOP" />
   <property name="sqoop.test.netezza.table.name" value="EMPNZ" />
 
+  <property name="s3.bucket.url" value="" />
+  <property name="s3.generator.command" value="" />
+
 
   <condition property="windows">
     <os family="windows" />
@@ -872,6 +875,9 @@
       <sysproperty key="sqoop.test.netezza.password" value="${sqoop.test.netezza.password}" />
       <sysproperty key="sqoop.test.netezza.db.name" value="${sqoop.test.netezza.db.name}" />
       <sysproperty key="sqoop.test.netezza.table.name" value="${sqoop.test.netezza.table.name}" />
+
+      <sysproperty key="s3.bucket.url" value="${s3.bucket.url}" />
+      <sysproperty key="s3.generator.command" value="${s3.generator.command}" />
 
       <!-- Location of Hive logs -->
       <!--<sysproperty key="hive.log.dir"
